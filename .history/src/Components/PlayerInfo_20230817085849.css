@@ -14,10 +14,6 @@ div.player {
     padding: 20px 35px;
     background-color: rgb(242, 229, 229);
     color: black;
-    background: #FFFFFF;
-    background: -moz-linear-gradient(top, #FFFFFF 0%, #EEEEEE 44%, #C7CDD2 100%);
-    background: -webkit-linear-gradient(top, #FFFFFF 0%, #EEEEEE 44%, #C7CDD2 100%);
-    background: linear-gradient(to bottom, #FFFFFF 0%, #EEEEEE 44%, #C7CDD2 100%);
     -webkit-box-shadow: 8px 8px 8px -8px rgba(0,0,0,0.85); 
     box-shadow: 8px 8px 8px -8px rgba(0,0,0,0.85);
     cursor: pointer;

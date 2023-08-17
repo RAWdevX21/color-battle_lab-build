@@ -5,7 +5,9 @@ export const Player = ({ player, onAttack }) => {
   console.log(`${player.name}'s HealthPoints:`, player.healthpoints);
   
   return (
-    <div className="player" style={{ backgroundColor: player.color }}>
+    <div className="player" style={{ 
+      background: `linear-gradient(${player.color}, darken(${player.color}, 20%))` 
+    }}>
       <h2>{player.name}</h2>
       <p
         className="hp"

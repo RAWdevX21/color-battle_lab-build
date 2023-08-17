@@ -10,7 +10,7 @@ export const Player = ({ player, onAttack }) => {
       <p
         className="hp"
         style={{ fontSize: "1.5rem", fontWeight: "bold", color: "black" }}>
-        HealthPoints: &nbsp;{player.healthpoints}
+        HealthPoints: {player.healthpoints}
       </p>
       {player.turn && (
         <button className="attack-button" onClick={onAttack}>

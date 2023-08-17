@@ -9,8 +9,8 @@ export const Player = ({ player, onAttack }) => {
       <h2>{player.name}</h2>
       <p
         className="hp"
-        style={{ fontSize: "1.5rem", fontWeight: "bold", color: "black" }}>
-        HealthPoints: &nbsp;{player.healthpoints}
+        style={{ fontSize: "3rem", fontWeight: "bold", color: "black" }}>
+        HealthPoints: {player.healthpoints}
       </p>
       {player.turn && (
         <button className="attack-button" onClick={onAttack}>
