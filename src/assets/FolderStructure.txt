@@ -1,0 +1,22 @@
+/color-battle_lab-build
+|-- /public
+|-- /src
+|   |-- /assets
+|   |   |-- Color Battle Lab.png
+|   |-- /Components
+|   |   |-- GameHeader.css
+|   |   |-- GameHeader.jsx
+|   |   |-- PlayerInfo.css
+|   |   |-- PlayerInfo.jsx
+|   |   |-- Die.css
+|   |   |-- Die.jsx
+|   |-- App.css
+|   |-- App.jsx
+|   |-- index.css
+|   |-- main.jsx
+|-- .eslintrc.cjs
+|-- .gitignore
+|-- index.html
+|-- package.json
+|-- README.md
+|-- vite.config.js
