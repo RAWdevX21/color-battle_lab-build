@@ -1,0 +1,26 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(49, 5, 112);
+}
+
+.players-container {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.player-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50;
+  flex: 1;
+  height: 50vh;
+  min-height: 50vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}

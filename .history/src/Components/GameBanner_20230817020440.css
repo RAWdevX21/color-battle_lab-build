@@ -1,0 +1,25 @@
+.banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #735d5d;
+}
+
+.damage-points {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.banner--c { color: red; }
+h1 span .banner--o { color: rgb(193, 47, 193); }
+h1 span .banner--l { color: rgb(60, 1, 38); }
+h1 span .banner--o2 { color: teal; }
+h1 span .banner--r { color: rgb(62, 5, 131); }
+h1 span .banner--b { color: rgb(43, 94, 43); }
+h1 span .banner--a { color: orange; }
+h1 span .banner--t { color: black; }
+h1 span .banner--l2 { color: rgb(255, 60, 0); }
+h1 span .banner--e { color: purple; }
+h1 span .banner--l3 { color: rgb(172, 8, 8); }
+h1 span .banner--a2 { color: rgb(8, 80, 8); }
+h1 span .banner--b2 { color: rgb(17, 250, 1); }
