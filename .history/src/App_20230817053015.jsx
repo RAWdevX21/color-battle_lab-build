@@ -8,14 +8,14 @@ export default function App() {
   const [player1, setPlayer1] = useState({
     name: "Player-One",
     color: "lightgreen",
-    healthpoints: 100,
+    hitpoints: 100,
     turn: true
   });
 
   const [player2, setPlayer2] = useState({
     name: "Player-Two",
-    color: "cornflowerblue",
-    healthpoints: 100,
+    color: "babyblue",
+    hitpoints: 100,
     turn: false
   });
 
@@ -27,7 +27,7 @@ export default function App() {
 
     const updatedDefender = {
       ...defender,
-      healthpoints: defender.healthpoints - damage
+      hitpoints: defender.hitpoints - damage
     };
     const updatedAttacker = { ...attacker, turn: false };
 
@@ -42,7 +42,7 @@ export default function App() {
     }
 
 
-    if (updatedDefender.healthpoints <= 0) {
+    if (updatedDefender.hitpoints <= 0) {
       alert(`${attacker.name} wins!`);
     }
   };

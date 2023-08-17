@@ -1,3 +1,13 @@
+/* body .die { */
+    /* font-family: 'Short Stack', 'Architects Daughter', 'Tillana', cursive; */
+/* } */
+
+/* .die { */
+    /* text-align: center; */
+    /* font-size: 3rem; */
+    /* margin-top: 20px; */
+/* } */
+
 .die-container {
     font-family: 'Short Stack', 'Architects Daughter', 'Tillana', cursive;
     width: 50px;

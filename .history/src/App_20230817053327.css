@@ -1,11 +1,15 @@
 #root {
   margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  border: 3px solid rgba(3, 69, 3, 0.884);
 }
 
 h2 {
   color: rgb(49, 5, 112);
+}
+
+.game-board {
+  padding: 0 30px;
 }
 
 .players-container {
@@ -15,9 +19,9 @@ h2 {
 
 .player-wrapper {
   flex: 1;
-  height: 50vh;
-  min-height: 50vh;
+  height: 50vh !important;
+  min-height: 50vh !important;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 

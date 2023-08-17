@@ -1,6 +1,6 @@
 .banner {
     text-align: center;
-    padding: 1em 5.5rem;
+    padding: 3rem;
     background-color: #ffffff;
     color: black;
 }
@@ -8,10 +8,6 @@
 .damage-points {
     margin-top: 10px;
     font-size: 6rem;
-}
-
-h1 {
-    margin-top: -0.25rem; 
 }
 
 .banner h1 span.banner--c { color: red; }
