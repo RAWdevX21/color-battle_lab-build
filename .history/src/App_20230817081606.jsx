@@ -23,7 +23,7 @@ export default function App() {
 
   const handleAttack = (attacker, defender, setAttacker, setDefender) => {
     console.log("Attack button pressed");
-    const damage = Math.floor(Math.random() * 12) + 1;
+    const damage = Math.floor(Math.random() * 9) + 1;
     console.log("Calculated damage:", damage);
     setDice(damage);
 

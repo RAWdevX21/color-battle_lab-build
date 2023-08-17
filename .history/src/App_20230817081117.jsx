@@ -23,15 +23,22 @@ export default function App() {
 
   const handleAttack = (attacker, defender, setAttacker, setDefender) => {
     console.log("Attack button pressed");
-    const damage = Math.floor(Math.random() * 12) + 1;
+    const damage = Math.floor(Math.random() * 6) + 1;
     console.log("Calculated damage:", damage);
     setDice(damage);
+
+    const updatedDefender = Object.assign({}, defender, {
+      healthpoints: defender.healthpoints - damage
+    });
+    console.log("Updated healthpoints:", updatedDefender.healthpoints);
+    const updatedAttacker = Object.assign({}, attacker, {
+      turn: false
+    });
 
     setDefender((prevDefender) => ({
       ...prevDefender,
       healthpoints: prevDefender.healthpoints - damage
     }));
-
     setAttacker((prevAttacker) => ({
       ...prevAttacker,
       turn: false
@@ -39,18 +46,13 @@ export default function App() {
 
     // Switch turns
     if (attacker === player1) {
-      setPlayer2((prevPlayer2) => ({
-        ...prevPlayer2,
-        turn: true
-      }));
+      setPlayer2({ ...player2, turn: true });
     } else {
-      setPlayer1((prevPlayer1) => ({
-        ...prevPlayer1,
-        turn: true
-      }));
+      setPlayer1({ ...player1, turn: true });
     }
 
-    if (defender.healthpoints - damage <= 0) {
+
+    if (updatedDefender.healthpoints <= 0) {
       alert(`${attacker.name} wins!`);
     }
   };
